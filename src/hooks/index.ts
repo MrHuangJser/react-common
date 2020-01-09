@@ -1,0 +1,1 @@
+export { useEncryptedLocalStorage } from './useEncryptedLocalStorage';
