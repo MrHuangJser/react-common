@@ -15,9 +15,11 @@
     "noImplicitReturns": true,
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
     "outDir": "dist",
     "lib": ["es2018", "dom"],
     "importHelpers": true
   },
-  "exclude": ["node_modules", "lib", "esm", "tests", "stories"]
+  "exclude": ["node_modules", "lib", "esm", "tests", "stories", "example"]
 }
