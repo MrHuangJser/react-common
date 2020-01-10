@@ -1,12 +1,10 @@
-[TOC]
-
 # common react utils
 
 ## Components
 
 ## Hooks
 
-- [useEncryptedLocalStorage](#useEncryptedLocalStorage)
+- [useEncryptedLocalStorage](#useencryptedlocalstorage)
 
 ### useEncryptedLocalStorage
 
@@ -47,7 +45,7 @@ ReactDOM.render(<CompTest />, document.body);
 
 ## decorators
 
-- [AntdColumns](#AntdColumns)
+- [AntdColumns](#antdcolumns)
 
 ### AntdColumns
 
@@ -92,7 +90,7 @@ ReactDOM.render(<CompTest />, document.body);
 
 ## Utils
 
-- [createGlobalState](#createGlobalState)
+- [createGlobalState](#createglobalstate)
 
 ### createGlobalState
 
