@@ -6,9 +6,10 @@ describe('useEncryptedLocalStorage', () => {
     expect(useEncryptedLocalStorage).toBeDefined();
   });
 
-  it('could read and write', () => {
-    const defaultValue = { a: 1 };
-    const nextValue = { a: 2 };
+  const defaultValue = { a: 1 };
+  const nextValue = { a: 2 };
+
+  it('should be initial', () => {
     const { result } = renderHook(() => useEncryptedLocalStorage('object', defaultValue));
     const [, setValue] = result.current;
     expect(setValue).toBeInstanceOf(Function);
@@ -19,6 +20,11 @@ describe('useEncryptedLocalStorage', () => {
       'object',
       Buffer.from(JSON.stringify(defaultValue)).toString('base64')
     );
+  });
+
+  it('should be changed', () => {
+    const { result } = renderHook(() => useEncryptedLocalStorage('object', defaultValue));
+    const [, setValue] = result.current;
 
     act(() => {
       setValue(nextValue);
