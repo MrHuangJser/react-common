@@ -6,7 +6,6 @@
     "jsx": "react",
     "declaration": true,
     "pretty": true,
-    "rootDir": "src",
     "sourceMap": false,
     "strict": true,
     "esModuleInterop": true,
@@ -19,7 +18,10 @@
     "experimentalDecorators": true,
     "outDir": "dist",
     "lib": ["es2018", "dom"],
-    "importHelpers": true
+    "importHelpers": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": ["node_modules/@types"],
+    "downlevelIteration": true
   },
   "exclude": ["node_modules", "lib", "esm", "tests", "stories", "example"]
 }
